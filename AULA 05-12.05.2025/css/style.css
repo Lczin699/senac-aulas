@@ -1,0 +1,74 @@
+.pageOne {
+    background-color: gray;
+}
+
+.pageTwo {
+    background-color: darkblue;
+}
+
+
+.div01 {
+    background-color: gray;
+    border: 1px solid black;
+    width: 800px;
+}
+
+h1 {
+    border: 2px solid black;
+}
+
+p {
+    border: 1px solid black;
+}
+
+.botao {
+    width: 110px;
+    background-color: black;
+    border: 1px solid pink ;
+}
+
+.div01 h1 {
+    color: red;
+}
+
+
+.div01 p {
+    font-size: 20px;
+}
+
+.img {
+    
+    border: 6px solid black;
+
+}
+
+.div01 .image  img {
+    width: 40vw;
+
+}
+
+.div02 {
+    background-color: gray;
+}
+
+.div02 h1 {
+    color: blue;
+}
+
+.div02 p {
+    font-size: 30px;
+}
+
+.div03 {
+    background-color: gray;
+}
+
+.div03 h1 {
+    color: purple;
+}
+
+.div03 p {
+    font-size: 4px;
+}
+
+

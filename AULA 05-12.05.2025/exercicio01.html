@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Medida CSS</title>
+</head>
+<body>
+
+<div class="content01">
+    <h1 class="titulo"><strong>Medidas Absolutas</strong></h1>
+
+
+    <p class="pa"><strong>Essas são as mais comuns que vemos no dia a dia. São medidas que não estão referenciadas a qualquer outra unidade, ou seja, não dependem de um valor de referência. São unidades de medidas definidas pela física, como o píxel, centímetro, metro, etc...
+    Essas medidas são fixas e não mudam de acordo com as especificações do dispositivo. Esse tipo de medida é indicada para quando conhecemos perfeitamente as características físicas e as configurações das mídias onde serão exibidos nossos projetos.</strong></p>
+
+
+    <h2 class="titulo02"><strong>Exemplos</strong></h2>
+
+
+    <ul><li><h4><strong>px (pixels)</strong></h4><p><strong>A unidade mais comum, que define um tamanho em pixels da tela, correspondendo a um ponto na tela do dispositivo.</strong></p></li></ul>
+    <ul><li><h4><strong>cm (centímetros)</strong></h4><p><strong>Uma unidade de medida física, onde 1 cm equivale a 25,2/64 polegadas, ou 37,8 px.</strong></p></li></ul>
+    <ul><li><h4><strong>mm (milímetros)</strong></h4><p><strong>Uma unidade de medida física menor que o centímetro, com uma relação similar ao cm.</strong></p></li></ul>
+    <ul><li><h4><strong>in (polegadas)</strong></h4><p><strong>Uma unidade de medida física, com 1 polegada equivalente a 2,54 centímetros.</strong></p></li></ul>
+    <ul><li><h4><strong>pt (pontos)</strong></h4><p><strong>Usado principalmente para tamanho de fontes, 1 pt é igual a 1/72 de polegada.</strong></p></li></ul>
+    </div>
+
+    <div class="content02">
+    <h1 class="titulo"><strong>Medidas Relativas</strong></h1>
+
+  
+    <p class="pa"><strong>Essas são as que normalmente não estamos habituados. Essas medidas são calculadas tendo como base uma outra unidade de medida definida, como por exemplo.
+        <em>em</em> e o <em>rem</em>(veremos mais sobre essas duas medidas no decorrer do post). O uso delas é mais apropriado para que possamos fazer ajustes em diferentes dispositivos garantindo um layout consistente e fluido em diversas mídias.
+        Devido ao fato de que essas medidas são calculadas pelo browser baseando-se em outra unidade, elas tendem a ser bastante flexíveis. Ou seja, podemos ter resultados diferentes de acordo com o ambiente.
+        Para começarmos a caminhar pelas medidas existentes, optei por começar pelas medidas absolutas, uma vez que estamos, normalmente, mais familiarizados com essas. Como diria meu amigo Flávio Almeida, bem começado, metade feito!</strong></p>
+
+        <h2 class="titulo02"><strong>Exemplos</strong></h2>
+
+    <ul><li><h4><strong>em</strong></h4><p><strong>Relativo ao tamanho da fonte do elemento pai. Por exemplo, se a fonte do pai for 16px, 1em será 16px.</strong></p></li></ul>
+    <ul><li><h4><strong>rem</strong></h4><p><strong>Relativo ao tamanho da fonte do elemento raiz (geralmente o elemento <html>). Por padrão, este tamanho é 16px.</strong></p></li></ul>
+    <ul><li><h4><strong>vw (viewport width)</strong></h4><p><strong>1% da largura da viewport (a área visível do navegador).</strong></p></li></ul>
+    <ul><li><h4><strong>vh (viewport height)</strong></h4><p><strong> 1% da altura da viewport.</strong></p></li></ul>
+    <ul><li><h4><strong>vmin (viewport minimum)</strong></h4><p><strong> 1% da menor dimensão da viewport (menor entre largura e altura).</strong></p></li></ul>
+    <ul><li><h4><strong>vmax (viewport maximum)</strong></h4><p><strong>1% da maior dimensão da viewport (maior entre largura e altura).</strong></p></li></ul>
+    <ul><li><h4><strong>% (porcentagem)</strong></h4><p><strong>Relativo ao tamanho do elemento pai. Por exemplo, 50% de largura significa 50% da largura do elemento pai.</strong></p></li></ul>
+ </div>
+
+    <div class="content03">
+    <h1 class="titulo"><strong>Considerações</strong></h1>
+
+
+    <ul><li><h3><strong>Acessibilidade</strong></h3><p><strong>As unidades relativas como em, rem, vw e vh são boas para criar layouts responsivos que se adaptam a diferentes tamanhos de tela e configurações de fontes dos usuários.</strong></p></li></ul>
+    <ul><li><h3><strong>Layouts Flexíveis</strong></h3><p><strong>Use em e rem para que o layout se adapte ao tamanho da fonte do usuário.</strong></p></li></ul>
+    <ul><li><h3><strong>Layouts Responsivos</strong></h3><p><strong>Use vw e vh para que o layout se ajuste dinamicamente ao tamanho da tela.</strong></p></li></ul>
+    <ul><li><h3><strong>Flexibilidade</strong></h3><p><strong>As unidades relativas permitem que os layouts sejam mais dinâmicos e se adaptem a diferentes dispositivos e configurações.</strong></p></li></ul>
+    <ul><li><h3><strong>Precisão</strong></h3><p><strong>As unidades absolutas, como px, são mais precisas e podem ser usadas para criar layouts fixos e precisos.</strong> </p></li></ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+body {
+    
+   background: url(https://wallpapercat.com/w/full/6/d/1/2117703-3840x2160-desktop-4k-dark-background-image.jpg);
+    color: goldenrod;
+    font-family: 'Times New Roman', Times, serif;
+   
+    
+}
+
+
+
+.content01 .titulo {
+    display: flex;
+    justify-content: center;
+
+}
+.content01 .pa {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+.content01 .titulo02 {
+    display: flex;
+    justify-content: center;
+}
+
+
+.content01 ul li h4 {
+    color: gold;
+}
+
+
+.content01 ul li p {
+    color: aliceblue;
+}
+
+
+
+.content02 .titulo {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.content02 .pa {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.content02 .pa em {
+    color:  red
+}
+
+.content02 .titulo02 {
+    display: flex;
+    justify-content: center;
+}
+
+
+.content02 ul li h4 {
+    color: gold
+
+}
+
+
+.content02 ul li p {
+    color: aliceblue
+}
+
+
+
+.content03  .titulo {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.content03 .pa {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+.content03 ul li h4 {
+    color: gold
+}
+
+
+.content03 ul li p {
+    color: aliceblue
+}
+
+
+
