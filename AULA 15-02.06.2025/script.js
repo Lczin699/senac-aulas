@@ -224,6 +224,18 @@ if (x > y && X > z){
     console.log("Z é o maior")
 }
 
+x = 10
+y = 20
+z = 40
+
+if (x < y && x < y){
+    console.log("X é o menor")
+}else if (y < x && y < z){
+    console.log("Y é o menor")
+}else {
+    console.log("Z é o menor")
+}
+
 console.log()
 console.log("-----------------------------------------------")
 console.log()

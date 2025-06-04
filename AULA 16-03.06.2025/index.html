@@ -12,52 +12,140 @@
     <script>
 
 
-        // Ler um número inteiro n. Escrever a soma de todos os números de 1 até n.
+
         console.log()
         console.log("Exercicio 01 - Ler um número inteiro n. Escrever a soma de todos os números de 1 até n.")
         console.log()
 
-        let x = 1
-        let soma = 0
-        let n = prompt("Digite um número")
+        let x = 1 // Começa com x valendo 1 (usado como contador)
+        let soma = 0 // Variável para acumular a soma dos números
+        let n = parseInt(prompt("Digite um número")) // Lê um número digitado pelo usuário e converte para inteiro
 
 
-        while (x <= n) {
-            soma = soma + x
-            //soma += x;
-            x++
-            //x = x + 1 
-
+        while (x <= n) // Enquanto x for menor ou igual ao número digitado
+        {
+            soma += x // Adiciona o valor de x à variável soma (mesmo que "soma = soma + x")
+            console.log(soma); // Mostra o valor atual de soma no console
+            x++  // Incrementa x em 1 (mesmo que x = x + 1)
         }
 
-        console.log(soma)
 
         console.log()
-        console.log("--------------------------------------")
+        console.log("--------------------------------------") // Isso é só pra ficar um pouco bonito e organizado
 
         console.log();
         console.log("Exercicio 02 -  Ler um número inteiro n. Escrever a soma de todos os números pares de 2 até n.")
         console.log()
 
-        x = 2
-        soma = 0
-        n = parseInt(prompt("Digite um número"))
+        x = 2  // Começa com x valendo 2 (primeiro número par)
+        soma = 0 // Variável que vai acumular a soma dos pares
+        n = parseInt(prompt("Digite um número")) // Lê um número do usuário e converte para inteiro
 
-        while (soma + x <= n) {
-            soma += x
-            x += 2
+        while (soma + x <= n)  // Enquanto a soma atual + o próximo número par for menor ou igual a n 
+        {
+            soma += x // Soma o número par atual à variável soma
+            console.log(soma);  // Mostra a soma parcial no console
+            x += 2 // Pula para o próximo número par (2, 4, 6, 8, ...)
+
         }
 
-        console.log(soma)
+
 
         console.log()
-        console.log("--------------------------------------")
+        console.log("--------------------------------------") // Isso é só pra ficar um pouco bonito e organizado
 
         console.log();
-        console.log("Exercicio 02 -  Ler um número inteiro n. Escrever a soma de todos os números pares de 2 até n.")
+        console.log("Exercicio 03 -  Ler um número inteiro n. Decidir se n é um número primo e apresente o resultado.")
+        console.log()
 
 
+        n = parseInt(prompt("Digite um número")); // Lê um número do usuário e converte para inteiro, guardando na variável n
+        x = 2; // Começa com x = 2, pois vamos testar divisores a partir do 2 (não testamos 1 e nem o próprio n)
+        let divi = 0; // divi será usado como marcador: se continuar 0, o número é primo; se virar 1, não é primo
 
+        if (n <= 1)  // Números menores ou iguais a 1 não são primos
+        {
+            divi = 1;
+        } else {
+            while (x < n)  // Enquanto x for menor que n (não testamos dividir por ele mesmo)
+
+            {
+                if (n % x === 0) // Se n for divisível por x (ou seja, sobra 0 na divisão)
+
+                {
+                    divi = 1;  // Então n tem um divisor além de 1 e ele mesmo → não é primo
+
+                    // Não usamos break, então o laço continua até o final
+                }
+
+                x++; // Incrementa x para testar o próximo número
+            }
+        }
+
+        if (divi === 0) {
+            console.log(n + " é primo");  // Se divi continuou 0, o número não teve divisores → é primo
+        } else {
+            console.log(n + " não é primo"); // Se divi virou 1, o número teve algum divisor → não é primo
+        }
+
+        console.log()
+        console.log("--------------------------------------"); // Isso é só pra ficar um pouco bonito e organizado
+
+        console.log();
+        console.log("Exercicio 04 -  Faça um programa que leia 5 números e informe o maior número.")
+        console.log()
+
+        let cont = 0; // Contador para controlar quantos números já foram digitados
+        let maior; // Variável que vai guardar o maior número digitado
+        let numero; // Variável para guardar o número digitado a cada volta do laço
+
+        while (cont < 5) // Laço que repete 5 vezes (de 0 a 4)
+        { 
+            n = prompt("Digite um número");  // Pede ao usuário que digite um número
+            numero = Number(n); // Converte o texto digitado em número
+
+            if (cont === 0) {
+                maior = numero; // Na primeira vez, o primeiro número já é considerado o maior
+            } else if (numero > maior) {
+                maior = numero;  // Se o novo número for maior que o "maior" atual, atualiza a variável
+            } else {
+                // Se o número não for maior que o atual, não faz nada
+            }
+            cont = cont + 1; // Incrementa o contador (mesmo que cont++)
+        }
+        console.log("O maior número digitado foi: " + maior); // Depois de sair do laço, mostra qual foi o maior número digitado
+
+        console.log()
+        console.log("--------------------------------------"); // Isso é só pra ficar um pouco bonito e organizado
+
+        console.log();
+        console.log("Exercicio 05 -  Faça um programa que leia 5 números e informe a soma e a média dos números.")
+
+        cont = 0;  // Inicializa o contador com 0
+        soma = 0; // Variável para somar os números digitados
+        let media; // Variável que guardará a média no final
+
+        while (cont < 5) // Enquanto o contador for menor que 5 (ou seja, 5 repetições)
+        {
+            n = prompt("Digite um número"); // Pede ao usuário um número
+            numero = parseInt(n); // Converte o valor digitado para número inteiro
+
+            
+            if (cont == 0) {
+                soma = numero; // Se for o primeiro número, começa a soma por ele
+            } else if (cont > 0) {
+                soma = soma + numero;  // Se não for o primeiro, vai somando com os anteriores
+            } else {
+                // Esse else é desnecessário, pois cont sempre será >= 0 nesse laço
+            }
+            
+            cont = cont + 1; // Incrementa o contador
+            
+        }
+
+        console.log("Resultado da soma: " + soma); // Mostra o total da soma
+        media = soma / 5; // Calcula a média dos 5 números
+        console.log("Média: " + media); // Mostra a média
 
 
 
