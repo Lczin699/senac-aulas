@@ -63,10 +63,7 @@
         x = 2; // Começa com x = 2, pois vamos testar divisores a partir do 2 (não testamos 1 e nem o próprio n)
         let divi = 0; // divi será usado como marcador: se continuar 0, o número é primo; se virar 1, não é primo
 
-        if (n <= 1)  // Números menores ou iguais a 1 não são primos
-        {
-            divi = 1;
-        } else {
+       
             while (x < n)  // Enquanto x for menor que n (não testamos dividir por ele mesmo)
 
             {
@@ -80,8 +77,7 @@
 
                 x++; // Incrementa x para testar o próximo número
             }
-        }
-
+        
         if (divi === 0) {
             console.log(n + " é primo");  // Se divi continuou 0, o número não teve divisores → é primo
         } else {
@@ -100,9 +96,9 @@
         let numero; // Variável para guardar o número digitado a cada volta do laço
 
         while (cont < 5) // Laço que repete 5 vezes (de 0 a 4)
-        { 
+        {
             n = prompt("Digite um número");  // Pede ao usuário que digite um número
-            numero = Number(n); // Converte o texto digitado em número
+            numero = parseInt(n); // Converte o texto digitado em número
 
             if (cont === 0) {
                 maior = numero; // Na primeira vez, o primeiro número já é considerado o maior
@@ -130,7 +126,7 @@
             n = prompt("Digite um número"); // Pede ao usuário um número
             numero = parseInt(n); // Converte o valor digitado para número inteiro
 
-            
+
             if (cont == 0) {
                 soma = numero; // Se for o primeiro número, começa a soma por ele
             } else if (cont > 0) {
@@ -138,9 +134,9 @@
             } else {
                 // Esse else é desnecessário, pois cont sempre será >= 0 nesse laço
             }
-            
+
             cont = cont + 1; // Incrementa o contador
-            
+
         }
 
         console.log("Resultado da soma: " + soma); // Mostra o total da soma
