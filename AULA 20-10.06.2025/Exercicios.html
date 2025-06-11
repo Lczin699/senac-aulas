@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        // Calcule e exiba a soma de todos os números de 1 a 100
+
+
+        let soma = 0
+
+        for (let i = 1; i <= 100; i++) {
+
+            soma += i
+
+        }
+        alert("A soma do 1 até o 100 é: " + soma)
+
+
+
+        // Calcule o fatorial de um número, por exemplo, 5! = 5 x 4 x 3 x 2 x 1
+
+        let numero = parseInt(prompt("Digite um número para verificar seu fatorial"));
+        let resultado = 1;
+
+        if (numero === 0 || numero === 1) {
+            resultado = 1;
+        } else {
+            for (let i = 1; i <= numero; i++) {
+                resultado *= i;
+            }
+        }
+
+        alert("O fatorial de " + numero + " é: " + resultado);
+
+
+        // Exiba os números de 10 a 1 em ordem decrescente
+
+        for (let n = 10; n >= 1; n--) {
+            alert(n);
+        }
+
+
+        // Exiba o quadrado de cada número de 1 a 10
+
+        for (let m = 1; m <= 10; m++){
+            alert(m * m)
+        }
+
+
+        // Exiba apenas os números entre 1 e 30 que são múltiplos de 3
+
+        for (let b = 1; b <= 30; b++){
+
+            if (b % 3 == 0){
+                alert(b)
+            }
+        }
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
