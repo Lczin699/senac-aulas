@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 23 - Função</title>
+</head>
+<body>
+    
+
+
+
+<script>
+
+
+// function idades(x){
+//     let anoatual = 2025
+//     let anodenascimento = x
+//     let idade = anoatual - anodenascimento
+//     return idade
+// }
+
+// let idade = idades(parseInt(prompt("Digite o ano de nascimento")))
+// alert("Ele(a) tem " + idade + " anos")
+
+
+// Função para calcular a média de um aluno
+function calcularMedia(notas) {
+    let soma = 0;
+    for (let i = 0; i < notas.length; i++) {
+        soma += notas[i];
+    }
+    return soma / notas.length;
+}
+
+// Função para cadastrar os alunos e suas notas
+function cadastrarAlunos() {
+    // Vetor para armazenar os alunos e suas notas
+    let alunos = [];
+
+    // Cadastrando 8 alunos
+    for (let i = 0; i < 8; i++) {
+        let aluno = {};
+        aluno.nome = prompt(`Digite o nome do aluno ${i + 1}:`); // Nome do aluno
+
+        // Vetor para armazenar as 4 notas de cada aluno
+        aluno.notas = [];
+        
+        // Cadastrando 4 notas para cada aluno
+        for (let j = 0; j < 4; j++) {
+            aluno.notas.push(parseFloat(prompt(`Digite a ${j + 1}ª nota do aluno ${aluno.nome}:`)));
+        }
+
+        // Calculando a média do aluno
+        aluno.media = calcularMedia(aluno.notas);
+
+        // Adicionando o aluno e suas notas ao vetor
+        alunos.push(aluno);
+    }
+
+    // Exibindo as médias dos alunos
+    for (let i = 0; i < alunos.length; i++) {
+        console.log(`A média do aluno ${alunos[i].nome} é: ${alunos[i].media.toFixed(2)}`);
+    }
+}
+
+// Chamando a função para cadastrar alunos e exibir as médias
+cadastrarAlunos();
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
